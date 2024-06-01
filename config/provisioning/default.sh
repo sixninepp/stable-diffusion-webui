@@ -41,7 +41,8 @@ CHECKPOINT_MODELS=(
 )
 
 LORA_MODELS=(
-    #"https://civitai.com/api/download/models/16576"
+    # "https://civitai.com/api/download/models/16576"
+    "https://civitai.com/api/download/models/146638"
 )
 
 VAE_MODELS=(
@@ -78,11 +79,6 @@ CONTROLNET_MODELS=(
     "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.yaml"
 )
 
-# CONFIG_FILES=(
-#     "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
-#     "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
-# )
-
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
@@ -111,12 +107,10 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
     
-    # Download a1111 config files
-    # for url in "${CONFIG_FILES[@]}"; do
-    #     printf "Downloading: %s\n" "${url}"
-    #     wget -q --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "/opt/stable-diffusion-webui" "${url}"
-    #     printf "\n"
-     
+    # Download A1111 config files
+    wget -O "${WORKSPACE}/stable-diffusion-webui/config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
+    wget -O "${WORKSPACE}/stable-diffusion-webui/ui-config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
+    
     PLATFORM_FLAGS=""
     if [[ $XPU_TARGET = "CPU" ]]; then
         PLATFORM_FLAGS="--use-cpu all --skip-torch-cuda-test --no-half"
