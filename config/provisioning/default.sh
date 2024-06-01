@@ -112,10 +112,10 @@ function provisioning_start() {
         "${ESRGAN_MODELS[@]}"
     
     # Download a1111 config files
-    for url in "${CONFIG_FILES[@]}"; do
-        printf "Downloading: %s\n" "${url}"
-        wget -q --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "/opt/stable-diffusion-webui" "${url}"
-        printf "\n"
+    # for url in "${CONFIG_FILES[@]}"; do
+    #     printf "Downloading: %s\n" "${url}"
+    #     wget -q --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "/opt/stable-diffusion-webui" "${url}"
+    #     printf "\n"
      
     PLATFORM_FLAGS=""
     if [[ $XPU_TARGET = "CPU" ]]; then
