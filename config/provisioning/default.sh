@@ -42,16 +42,19 @@ CHECKPOINT_MODELS=(
 
 LORA_MODELS=(
     # "https://civitai.com/api/download/models/16576"
-    "https://civitai.com/api/download/models/146638" # fapp
+    "https://civitai.com/api/download/models/9208" # EasyNegative
+    "https://civitai.com/api/download/models/146638" # FAPP
     "https://civitai.com/api/download/models/283467" # cum facial
-    "https://civitai.com/api/download/models/7870" # shirt lift
-    "https://civitai.com/api/download/models/10187" # skirt lift
+    "https://civitai.com/api/download/models/7870" # shirtlift
+    "https://civitai.com/api/download/models/10187" # skirtlift
+    "https://civitai.com/api/download/models/307923" # blowjob (quiron) - https://civitai.com/models/273185/blowjob-close-to-real-lora
 )
 
 VAE_MODELS=(
     # "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
     # "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
     # "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
+    "https://civitai.com/api/download/models/28569" # kl-f8-anime2 VAE
 )
 
 ESRGAN_MODELS=(
