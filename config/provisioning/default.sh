@@ -26,14 +26,14 @@ EXTENSIONS=(
     # "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser"
     # "https://github.com/hako-mikan/sd-webui-regional-prompter"
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
-    "https://github.com/fkunn1326/openpose-editor"
+    # "https://github.com/fkunn1326/openpose-editor"
     "https://github.com/Gourieff/sd-webui-reactor"
     "https://github.com/Bing-su/adetailer"
 )
 
 CHECKPOINT_MODELS=(
-    "https://civitai.com/api/download/models/143906"
-    "https://civitai.com/api/download/models/134361"
+    # "https://civitai.com/api/download/models/143906"
+    # "https://civitai.com/api/download/models/134361"
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
@@ -42,36 +42,36 @@ CHECKPOINT_MODELS=(
 
 LORA_MODELS=(
     # "https://civitai.com/api/download/models/16576"
-    "https://civitai.com/api/download/models/9208" # EasyNegative
-    "https://civitai.com/api/download/models/146638" # FAPP
-    "https://civitai.com/api/download/models/283467" # cum facial
-    "https://civitai.com/api/download/models/7870" # shirtlift
-    "https://civitai.com/api/download/models/10187" # skirtlift
-    "https://civitai.com/api/download/models/307923" # blowjob (quiron) - https://civitai.com/models/273185/blowjob-close-to-real-lora
+    # "https://civitai.com/api/download/models/9208" # EasyNegative
+    # "https://civitai.com/api/download/models/146638" # FAPP
+    # "https://civitai.com/api/download/models/283467" # cum facial
+    # "https://civitai.com/api/download/models/7870" # shirtlift
+    # "https://civitai.com/api/download/models/10187" # skirtlift
+    # "https://civitai.com/api/download/models/307923" # blowjob (quiron) - https://civitai.com/models/273185/blowjob-close-to-real-lora
 )
 
 VAE_MODELS=(
     # "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
     # "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
     # "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
-    "https://civitai.com/api/download/models/28569" # kl-f8-anime2 VAE
+    # "https://civitai.com/api/download/models/28569" # kl-f8-anime2 VAE
 )
 
 ESRGAN_MODELS=(
     # "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
     # "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
     # "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
-    "https://huggingface.co/gemasai/4x_NMKD-Superscale-SP_178000_G/resolve/main/4x_NMKD-Superscale-SP_178000_G.pth"
-    "https://huggingface.co/gemasai/4x_NMKD-Siax_200k/resolve/main/4x_NMKD-Siax_200k.pth"
+    # "https://huggingface.co/gemasai/4x_NMKD-Superscale-SP_178000_G/resolve/main/4x_NMKD-Superscale-SP_178000_G.pth"
+    # "https://huggingface.co/gemasai/4x_NMKD-Siax_200k/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.yaml"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.yaml"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.yaml"
+    # "https://huggingface.co/nolanaatama/controlnetv1.1/resolve/main/control_v11p_sd15_canny_fp16.safetensors"
+    # "https://huggingface.co/nolanaatama/controlnetv1.1/resolve/main/control_v11p_sd15_canny_fp16.yaml"
+    # "https://huggingface.co/nolanaatama/controlnetv1.1/resolve/main/control_v11p_sd15_lineart_fp16.yaml"
+    # "https://huggingface.co/nolanaatama/controlnetv1.1/resolve/main/control_v11p_sd15_lineart_fp16.yaml"
+    # "https://huggingface.co/nolanaatama/controlnetv1.1/resolve/main/control_v11p_sd15_openpose_fp16.yaml"
+    # "https://huggingface.co/nolanaatama/controlnetv1.1/resolve/main/control_v11p_sd15_openpose_fp16.yaml"
 )
 
 
@@ -103,8 +103,8 @@ function provisioning_start() {
         "${ESRGAN_MODELS[@]}"
     
     # Download A1111 config files
-    wget -O "${WORKSPACE}/stable-diffusion-webui/config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
-    wget -O "${WORKSPACE}/stable-diffusion-webui/ui-config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
+    # wget -O "${WORKSPACE}/stable-diffusion-webui/config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
+    # wget -O "${WORKSPACE}/stable-diffusion-webui/ui-config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
     
     PLATFORM_FLAGS=""
     if [[ $XPU_TARGET = "CPU" ]]; then
