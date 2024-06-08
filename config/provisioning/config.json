@@ -201,7 +201,6 @@
     "localization": "None",
     "quicksettings_list": [
         "sd_model_checkpoint",
-        "sd_lora",
         "sd_vae"
     ],
     "ui_tab_order": [],
