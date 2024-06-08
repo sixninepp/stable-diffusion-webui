@@ -27,8 +27,8 @@ EXTENSIONS=(
     # "https://github.com/hako-mikan/sd-webui-regional-prompter"
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
     # "https://github.com/fkunn1326/openpose-editor"
-    "https://github.com/Gourieff/sd-webui-reactor"
-    "https://github.com/Bing-su/adetailer"
+    # "https://github.com/Gourieff/sd-webui-reactor"
+    # "https://github.com/Bing-su/adetailer"
 )
 
 CHECKPOINT_MODELS=(
@@ -103,8 +103,8 @@ function provisioning_start() {
         "${ESRGAN_MODELS[@]}"
     
     # Download A1111 config files
-    # wget -O "${WORKSPACE}/stable-diffusion-webui/config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
-    # wget -O "${WORKSPACE}/stable-diffusion-webui/ui-config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
+    wget -O "${WORKSPACE}/stable-diffusion-webui/config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
+    wget -O "${WORKSPACE}/stable-diffusion-webui/ui-config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
     
     PLATFORM_FLAGS=""
     if [[ $XPU_TARGET = "CPU" ]]; then
