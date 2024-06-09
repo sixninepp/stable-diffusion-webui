@@ -105,6 +105,7 @@ function provisioning_start() {
     # Download A1111 config files
     wget -O "${WORKSPACE}/stable-diffusion-webui/config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/config.json"
     wget -O "${WORKSPACE}/stable-diffusion-webui/ui-config.json" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/ui-config.json"
+    wget -O "${WORKSPACE}/stable-diffusion-webui/styles.csv" "https://raw.githubusercontent.com/sixninepp/stable-diffusion-webui/main/config/provisioning/styles.csv"
     
     PLATFORM_FLAGS=""
     if [[ $XPU_TARGET = "CPU" ]]; then
